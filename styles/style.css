@@ -266,6 +266,39 @@ section {
 
 }
 
+/* our upcoming class style */
+.upcoming-class {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.upcoming h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.class-container {
+    border-radius: 18px;
+    text-align: center;
+    background: rgb(34, 34, 34);
+    padding: 2rem;
+}
+
+.class-container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: center;
+}
 
 
 
@@ -292,7 +325,8 @@ section {
 
     .hero-container,
     .habits-container,
-    .extra-content {
+    .extra-content,
+    .upcoming-class {
         flex-direction: column;
 
     }
@@ -320,11 +354,18 @@ section {
         transform: translate(20%, -350%);
     }
 
-    .extra-item h2 {
+    .extra-item {
+        margin-right: 0;
+    }
+
+    .extra-item, .upcoming  h2 {
         font-size: 2rem;
     }
 
     .extra-img img {
         margin-top: 31px;
+    }
+    .card-title{
+        font-size: 1.5rem;
     }
 }
