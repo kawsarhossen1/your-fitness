@@ -26,7 +26,7 @@ section {
 .btn-primary {
     border-radius: 46px;
     background: rgb(230, 83, 60);
-    padding: 8px 20px 8px 20px;
+    padding: 16px 20px;
     gap: 3px;
     border: none;
     font-size: 1.1rem;
@@ -34,13 +34,15 @@ section {
     color: #FFFFFF;
     text-align: center;
 }
-.primary-title{
+
+.primary-title {
     font-size: 3rem;
     font-weight: 900;
     line-height: 120%;
     color: rgb(255, 255, 255);
 
 }
+
 .primary-description {
     font-size: 1rem;
     font-weight: 400;
@@ -186,43 +188,83 @@ section {
 }
 
 /* change your habits styles */
-.habits-container{
+.habits-container {
     display: flex;
     justify-content: space-between;
     gap: 38px;
 }
-.habits-title{
+
+.habits-title {
     text-align: center;
 }
 
-.habits-title p{
+.habits-title p {
     margin-top: 14px;
     margin-bottom: 54px;
 }
 
-.habits-card{
+.habits-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-.habits-img img{
+.habits-img img {
     border-radius: 50%;
 }
-.habits-items h4{
+
+.habits-items h4 {
     font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
     color: rgb(255, 255, 255);
 }
-.habits-items p{
+
+.habits-items p {
     margin-top: 6px;
     max-width: 230px;
     text-align: center;
 }
 
+/* Run and extra mile section start */
 
+.extra-content {
+    padding: 30px 32px 30px 54px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+
+}
+
+.extra-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extra-item {
+    margin-right: 165px;
+}
+
+.extra-item p {
+    margin-top: 14px;
+    margin-bottom: 34px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.extra-item button {
+    font-size: 18px;
+    padding: 16px 40px;
+
+}
+
+.extra-img img {
+    width: 100%;
+    border-radius: 18px;
+
+
+}
 
 
 
@@ -243,22 +285,19 @@ section {
         color: #FFFFFF;
     }
 
-    .nav-title {
+    .nav-title,
+    .hero-title {
         font-size: 2rem;
     }
 
-    /* Hero section */
-    .hero-container {
+    .hero-container,
+    .habits-container,
+    .extra-content {
         flex-direction: column;
 
     }
 
-    .hero-title {
-        font-size: 2.1rem;
-    }
-
     .hero-button {
-
         gap: 0;
         font-size: 1rem;
         font-weight: 400;
@@ -281,8 +320,11 @@ section {
         transform: translate(20%, -350%);
     }
 
-    /* your habits section */
-    .habits-container{
-        flex-direction: column;
+    .extra-item h2 {
+        font-size: 2rem;
+    }
+
+    .extra-img img {
+        margin-top: 31px;
     }
 }
