@@ -20,6 +20,14 @@ body {
     padding-right: 40px !important;
 }
 
+.secondery-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 120%;
+    color: rgb(255, 255, 255);
+
+}
+
 .font-playwite {
     font-family: "Playwrite GB S", cursive;
 }
@@ -163,7 +171,7 @@ section {
 }
 
 .hero-card {
-    transform: translate(1090%, -470%);
+    transform: translate(800%, -470%);
     position: absolute;
 }
 
@@ -179,7 +187,7 @@ section {
 
 .video-card {
 
-    transform: translate(920%, -160%);
+    transform: translate(650%, -160%);
 }
 
 .video-card {
@@ -330,7 +338,7 @@ th {
     font-weight: 400;
     line-height: 120%;
     color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
+    padding: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
     border-collapse: collapse
@@ -410,6 +418,48 @@ body .bmi-content {
     flex: 1;
 }
 
+/* meet our team section styles */
+.meet-content {
+
+    text-align: center;
+}
+
+.meet-content p {
+    margin-top: 14px;
+    margin-bottom: 78px;
+}
+
+.meet-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.trainer-card {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 
 
 /* Responsive mobile Devices */
@@ -429,11 +479,16 @@ body .bmi-content {
         font-size: 2rem;
     }
 
+    .primary-title {
+        font-size: 2rem;
+    }
+
     .hero-container,
     .habits-container,
     .extra-content,
     .upcoming-class,
-    .bmi-content {
+    .bmi-content,
+    .meet-card-container {
         flex-direction: column;
 
     }
@@ -463,22 +518,6 @@ body .bmi-content {
 
     .extra-item {
         margin-right: 0;
-    }
-
-    .habits-title h2 {
-        font-size: 2rem;
-    }
-
-    .upcoming h2 {
-        font-size: 2rem;
-    }
-
-    .bmi-text h2 {
-        font-size: 2rem;
-    }
-
-    .extra-item h2 {
-        font-size: 2rem;
     }
 
     .extra-img img {
