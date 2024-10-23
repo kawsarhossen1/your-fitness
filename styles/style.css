@@ -349,7 +349,7 @@ th {
     color: rgb(255, 255, 255);
 }
 
-body .bmi-content {
+.bmi-content {
     display: flex;
     justify-content: space-between;
     margin-top: 88px;
@@ -529,8 +529,13 @@ body .bmi-content {
     .hero-button {
         flex-direction: column;
     }
-    .btn-app{
+
+    .btn-app {
         margin-top: 20px;
+    }
+
+    .trainer-card {
+        overflow: hidden;
     }
 }
 
@@ -610,7 +615,102 @@ body .bmi-content {
     .bmi-calculator-item {
         margin-bottom: 42px;
     }
-    .footer-content{
+
+    .footer-content {
         gap: 50px;
+    }
+}
+
+/* responsive medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+
+    .nav-option {
+        display: none;
+    }
+
+    .han-bar {
+        display: block;
+        color: #FFFFFF;
+    }
+
+    .hero-card {
+        display: none;
+        transform: translate(120%, -550%);
+
+    }
+
+    .video-card {
+        display: none;
+        transform: translate(20%, -350%);
+    }
+
+    .hero-container,
+    .habits-container,
+    .extra-content,
+    .upcoming-class,
+    .bmi-content,
+    .meet-card-container,
+    .footer-content {
+        flex-direction: column;
+
+    }
+
+    .bmi-text h2,
+    .bmi-text p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .calculate-item {
+        margin-top: 20px;
+    }
+
+    .extra-item button {
+        margin-bottom: 20px;
+    }
+
+    .meet-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 10px;
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    .footer-content {
+        gap: 50px;
+    }
+
+    .footer-content,
+    .link-title {
+        text-align: center;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+    }
+}
+
+/* responsive large devices */
+@media screen and (min-width: 992px) and (max-width: 1800px) {
+
+
+    .han-bar {
+        display: none;
+        color: #FFFFFF;
+    }
+
+    .hero-card {
+        display: none;
+        transform: translate(120%, -550%);
+
+    }
+
+    .video-card {
+        display: none;
+        transform: translate(20%, -350%);
     }
 }
