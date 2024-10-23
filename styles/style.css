@@ -465,9 +465,19 @@ body .bmi-content {
         margin-right: 0;
     }
 
-    .extra-item,
-    .upcoming,
-    .bmi-text  h2 {
+    .habits-title h2 {
+        font-size: 2rem;
+    }
+
+    .upcoming h2 {
+        font-size: 2rem;
+    }
+
+    .bmi-text h2 {
+        font-size: 2rem;
+    }
+
+    .extra-item h2 {
         font-size: 2rem;
     }
 
@@ -482,10 +492,12 @@ body .bmi-content {
     .bmi-text h2 {
         margin-left: 0;
     }
+
     .bmi-text p {
         margin-left: 0;
     }
-    .bmi-calculator-item{
+
+    .bmi-calculator-item {
         margin-bottom: 42px;
     }
 }
