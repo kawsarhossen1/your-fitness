@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -146,6 +145,7 @@ section {
 
 .hero-button {
     display: flex;
+    justify-content: space-between;
     gap: 14px;
 }
 
@@ -525,6 +525,15 @@ body .bmi-content {
 
 /* Responsive mobile Devices */
 
+@media (max-width: 400px) {
+    .hero-button {
+        flex-direction: column;
+    }
+    .btn-app{
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .nav-option {
         display: none;
@@ -600,5 +609,8 @@ body .bmi-content {
 
     .bmi-calculator-item {
         margin-bottom: 42px;
+    }
+    .footer-content{
+        gap: 50px;
     }
 }
