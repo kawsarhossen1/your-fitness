@@ -155,6 +155,10 @@ section {
     gap: 14px;
 }
 
+.hero-img {
+    position: relative;
+}
+
 .hero-card,
 .video-card {
     max-width: 200px;
@@ -176,8 +180,10 @@ section {
 }
 
 .hero-card {
-    transform: translate(800%, -470%);
+
     position: absolute;
+    top: 30%;
+    right: -20%;
 }
 
 .hero-card,
@@ -191,8 +197,10 @@ section {
 }
 
 .video-card {
+    position: absolute;
+    bottom: 10%;
+    left: -15%;
 
-    transform: translate(650%, -160%);
 }
 
 .video-card {
@@ -548,6 +556,14 @@ th {
     .trainer-card {
         overflow: hidden;
     }
+
+    .hero-card {
+        display: none;
+    }
+
+    .video-card {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -589,18 +605,6 @@ th {
 
     .hero-img {
         margin-top: 24PX;
-    }
-
-    .hero-card {
-        display: none;
-        transform: translate(120%, -550%);
-
-    }
-
-
-    .video-card {
-        display: none;
-        transform: translate(20%, -350%);
     }
 
     .extra-item {
@@ -649,17 +653,6 @@ th {
     .han-bar {
         display: block;
         color: #FFFFFF;
-    }
-
-    .hero-card {
-        display: none;
-        transform: translate(120%, -550%);
-
-    }
-
-    .video-card {
-        display: none;
-        transform: translate(20%, -350%);
     }
 
     .hero-container,
@@ -720,18 +713,7 @@ th {
         color: #FFFFFF;
     }
 
-    .hero-card {
-        display: none;
-        transform: translate(120%, -550%);
-
-    }
-
-    .video-card {
-        display: none;
-        transform: translate(20%, -350%);
-    }
-    .calculate-item{
+    .calculate-item {
         width: 45%;
     }
 }
-
