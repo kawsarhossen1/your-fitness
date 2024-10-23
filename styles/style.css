@@ -12,7 +12,6 @@ body {
     width: 90%;
     margin: 2.5rem auto;
     background-color: black;
-
 }
 
 .px-40 {
@@ -432,8 +431,8 @@ body .bmi-content {
 .meet-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 20px 20px;
     gap: 20px;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
@@ -460,7 +459,69 @@ body .bmi-content {
     left: 0;
 }
 
+/* footer section styles */
 
+.footer {
+
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 88px;
+    margin-bottom: 35px;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.footer-brand {
+    max-width: 500px;
+}
+
+.footer-brand h2 {
+    font-size: 4.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: rgb(230, 83, 60);
+
+}
+
+.link-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;
+    margin-bottom: 39px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-item ul {
+    list-style: none;
+}
+
+.footer-item ul li {
+    margin-bottom: 20px;
+}
+
+.footer-item a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer hr {
+    margin-top: 79px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 36px;
+    color: rgba(255, 255, 255, 0.5);
+}
 
 /* Responsive mobile Devices */
 
@@ -488,7 +549,8 @@ body .bmi-content {
     .extra-content,
     .upcoming-class,
     .bmi-content,
-    .meet-card-container {
+    .meet-card-container,
+    .footer-content {
         flex-direction: column;
 
     }
